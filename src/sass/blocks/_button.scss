@@ -1,0 +1,15 @@
+.btn {
+    height: 45px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(179, 176, 176, 0.15);
+    padding: 12px 26px;
+    &:hover {
+        box-shadow: 0px 3px 3px 0px $main-color;
+        border: none;
+    }
+}
+
+.btn2 {
+    height: 45px;
+    padding: 12px 26px;
+}

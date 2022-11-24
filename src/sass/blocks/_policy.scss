@@ -1,0 +1,17 @@
+.policy {
+    padding: 50px;
+    &__title {
+        margin-bottom: 24px;
+    }
+    &__descr {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+    &__text {
+        font-size: 14px;
+        padding-left: 30px;
+    }
+    &__block {
+        margin: 30px 0;
+    }
+}
