@@ -7,6 +7,21 @@
     .container {
         max-width: 960px;
     }
+    .promo {
+        padding-top: 80px;
+        &__title {
+            margin-left: 10px;
+        }
+        &__subtitle {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        &__btns {
+            margin-left: 10px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+    }
     .about {
         &__wrapper {
         grid-template-columns: 400px 520px;
@@ -73,6 +88,10 @@
         &__form {
             grid-template: 45px 190px 45px / repeat(2, 250px);
         }
+    }
+    .title-white_fz48 {
+        // display: inline;
+        font-size: 40px;
     }
 }
 
@@ -152,22 +171,32 @@
         display: none;
         }
    }
+   .title-white_fz48 {
+    font-size: 30px;
+    line-height: 40px;
+   }
 }
 
 @media (max-width: 768px) {
     .container {
         max-width: 540px;
     }
-    .title-white {
-        &_fz48 {
-            font-size: 28px;
-        }
-    }
     .promo {
-        background: url(../img/main_photo.png) no-repeat 55%/cover;
         &__title {
-            line-height: 39px;
-            width: 300px;
+            margin-top: 15px;
+        }
+        &__subtitle {
+            &:before {
+                content: '';
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                background: $main-color;
+                z-index: -1;
+                top: -15%;
+                left: 0;
+            }
         }
     }
     .about {
@@ -230,17 +259,20 @@
         display: none;
         }
    }
+   .title-white_fz48 {
+        font-size: 26px;
+        line-height: 40px;
+   }
+   .title-white_fz16 {
+        font-size: 15px;
+   }
+
 }
 
 @media (max-width: 576px) {
     .container {
         max-width: 100%;
         padding: 0 10px;
-    }
-    .title-white {
-        &_fz48 {
-            font-size: 26px;
-        }
     }
     .title {
         &_fz36 {
@@ -257,8 +289,23 @@
         }
     }
     .promo {
+        background: none;
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__wrap {
+            width: 100%;
+            margin-left: 0;
+            margin-bottom: 10px;
+        }
         &__btns {
             margin-top: 30px;
+        }
+        &__сircle {
+            display: flex;
         }
     }
     .about {
