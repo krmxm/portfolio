@@ -1,5 +1,6 @@
 .skills {
     padding-top: 120px;
+    background-color: #000;
     &__items {
         padding: 60px 10px 0 10px;
         display: grid;
@@ -8,8 +9,10 @@
         gap: 13px;
     }
     &__item {
-        border: 1px solid #000;
+        background-color:#fff;
+        border: 1px solid #fff;
         padding: 30px 29px 25px 30px;
+        border-radius: 20px;
         &-img {
             display: flex;
             align-items: center;

@@ -8,7 +8,7 @@
     &__wrap {
         width: 50%;
         margin-left: 50%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.3);
         border-radius: 20px;
         display: flex;
         // justify-content: end;
@@ -56,19 +56,26 @@
     }
     &__сircle {
         display: none;
-        justify-content: center;
-        align-items: center;
+        background: url('../img/mainphoto.jpg') no-repeat 20%/cover;
         width: 220px;
         height: 220px;
-        border-radius: 100%;
-        overflow: hidden;
-        background: url('../img/mainphoto.jpg') no-repeat 50%/cover;
+        box-shadow: inset 0 0 0 6px rgb(255, 255, 255, 0.3);
+        // border-radius: 100%;
+        // overflow: hidden;
         margin-top: 50px;
         margin-bottom: 50px;
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+        animation: promo__animation 8s ease-in-out infinite;
+    }
+}
+
+@keyframes promo__animation {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
     }
 }

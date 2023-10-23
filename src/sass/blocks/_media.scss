@@ -7,6 +7,9 @@
     .container {
         max-width: 960px;
     }
+    .nav {
+        margin: 0 5.5rem;
+    }
     .promo {
         padding-top: 80px;
         &__title {
@@ -99,6 +102,9 @@
     .container {
         max-width: 720px;
     }
+    .nav {
+        margin: 0 3.5rem;
+    }
     .title {
         &_fz36 {
             font-size: 30px;
@@ -181,7 +187,55 @@
     .container {
         max-width: 540px;
     }
+    .header {
+        top: initial;
+        bottom: 0;
+        box-shadow: 0 -1px 4px rgba(255, 255, 255, 0.15);
+        border-radius: 20px 20px 0 0;
+    }
+
+    .nav {
+        display: block;
+        min-height: 46px;
+        margin: 0 1.2rem;
+        &__menu {
+            // position: fixed;
+            display: block;
+            height: 100px;
+            padding-bottom: 150px;
+            opacity: 1;
+            overflow: visible;
+            transition: all 0.3s ease-out;
+        }
+        &__toggle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &__list {
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+        }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 15px;
+        }
+        &__logo {
+            font-size: 20px;
+        }
+        &__icon,
+        &__close,
+        &__logo {
+            display: block;
+        }
+    }
     .promo {
+        padding-top: 20px;
         &__title {
             margin-top: 15px;
         }
@@ -197,6 +251,9 @@
                 top: -15%;
                 left: 0;
             }
+        }
+        &__circle {
+            margin: 20px 0;
         }
     }
     .about {
@@ -289,12 +346,16 @@
         }
     }
     .promo {
-        background: none;
+        background: #000;
+        display: flex;
+        justify-self: center;
+        align-items: center;
         &__wrapper {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            padding-bottom: 60px;
         }
         &__wrap {
             width: 100%;
@@ -306,6 +367,7 @@
         }
         &__сircle {
             display: flex;
+            margin: 25px 0;
         }
     }
     .about {
