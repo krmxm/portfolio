@@ -119,6 +119,10 @@
             row-gap: 30px ;
 
         }
+        &__img {
+            width: 300px;
+            height: 300px;
+        }
         &__skills {
             grid-template-columns: 380px;
             grid-auto-rows: minmax(115px,auto);
@@ -265,6 +269,13 @@
         &__wrapper {
             grid-template: 400px auto auto / 1fr;
         }
+        &__img {
+            // grid-row: unset;
+            display: block;
+            margin: 0 auto;
+            width: 400px;
+            height: 400px;
+        }
         &__photo {
             grid-row: unset;
         }
@@ -378,6 +389,14 @@
         &__wrapper {
             grid-template: 340px auto auto / 1fr;
             column-gap: 20px;
+        }
+        &__img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            box-shadow: none;
+            animation: none;
+
         }
         &__skills {
             grid-template-columns: 1fr;
