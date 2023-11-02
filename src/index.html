@@ -55,6 +55,11 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+
+    <div class="preloader">
+        <div class="title title_fz36 title_main-color spinner-loader preloader__loader">kramarenko-dev</div>
+    </div>
+
     <aside class="sidepanel">
         <a href="#" class="sidepanel__links"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M-7.46167e-07 2.92969L-1.28061e-07 17.0703C-5.74539e-08 18.6856 1.31439 20 2.92969 20L17.0703 20C18.6856 20 20 18.6856 20 17.0703L20 11.1719L12.9297 11.1719L12.9297 13.5156L9.41406 13.5156L9.41406 11.1719L7.03125 11.1719C5.09262 11.1719 3.51562 9.59488 3.51562 7.65625L3.51562 4.10156L7.03125 4.10156L7.03125 7.65625L9.41406 7.65625L9.41406 4.10156L12.9297 4.6875L12.9297 7.65625L20 7.65625L20 2.92969C20 1.31439 18.6856 -8.16774e-07 17.0703 -7.46167e-07L2.92969 -1.28061e-07C1.31439 -5.74539e-08 -8.16774e-07 1.31439 -7.46167e-07 2.92969Z" fill="white"/>
@@ -80,32 +85,32 @@
             <div class="nav__menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link">
+                        <a href="#home" class="nav__link home-link active-link">
                             <i class="uil uil-estate nav__icon"></i> Home
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">
+                        <a href="#about" class="nav__link about-link resume-link">
                             <i class="uil uil-user nav__icon"></i> About
                         </a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link">
+                        <a href="#skills" class="nav__link skills-link">
                             <i class="uil uil-file-alt nav__icon"></i> Skills
                         </a>
                     </li>
 
 
                     <li class="nav__item">
-                        <a href="#portfolio" class="nav__link">
+                        <a href="#portfolio" class="nav__link portfolio-link">
                             <i class="uil uil-scenery nav__icon"></i>
                             Portfolio</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contacts" class="nav__link">
+                        <a href="#contacts" class="nav__link contacts-link">
                             <i class="uil uil-message nav__icon"></i> Contacts
                         </a>
                     </li>
@@ -127,11 +132,58 @@
                 <div class="promo__сircle"></div>
                 <div class="promo__wrap">
                     <div class="promo__subtitle title-white title-white_fz16">Меня зовут Максим Крамаренко</div>
-                    <div class="promo__title title-white title-white_fz48">Я web-разработчик 
+                    <div class="promo__title title-white">Я frontend-разработчик 
                     из города Таганрог</div>
                     <div class="promo__btns">
-                        <a href="#" class="promo__link btn">Портфолио</a>
-                        <a href="#" class="promo__link btn2">Про меня</a>
+                        <a href="#portfolio" class="promo__link btn">Портфолио</a>
+                        <a href="#about" class="promo__link btn2">Про меня</a>
+                        <div class="promo__scroll-wrap">
+
+                            <div class="promo__scroll">
+                                <svg
+                                    width="32px"
+                                    height="32px"
+                                    class="home__scroll-mouse"
+                                    viewBox="0 0 247 390"
+                                    version="1.1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    xmlnsXlink="http://www.w3.org/1999/xlink"
+                                    style="
+                                        fill-rule: evenodd;
+                                        clip-rule: evenodd;
+                                        stroke-linecap: round;
+                                        stroke-linejoin: round;
+                                        stroke-miterlimit: 1.5;
+                                    "
+                                >
+                                    <path
+                                        class="promo__wheel"
+                                        d="M123.359,79.775l0,72.843"
+                                        style="
+                                            fill: none;
+                                            stroke: #ffffff;
+                                            stroke-width: 20px;
+                                        "
+                                    ></path>
+                                    <path
+                                        id="mouse"
+                                        d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                                        style="
+                                            fill: none;
+                                            stroke: #ffffff;
+                                            stroke-width: 20px;
+                                        "
+                                    ></path>
+                                </svg>
+                            </div>
+
+                                <div class="promo__text">Scroll Down</div>
+
+                                <div class="promo__arrow">
+                                    <svg width="18px" hieght="18px" id="myImg" class="mainimage" style="fill: rgb(255, 255, 255);" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"><title>Scroll Arrow To Down SVG icon</title><g><path d="M77.3,249.3c-15.4-15.2-40.4-15.2-55.8,0c-15.4,15.2-15.4,40,0,55.2l450.6,446.1c15.4,15.2,40.4,15.2,55.8,0l450.6-446.1c15.4-15.2,15.4-40,0-55.2c-15.4-15.2-40.4-15.2-55.8,0L500,656.2L77.3,249.3z"></path></g></svg>
+                                </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -212,82 +264,82 @@
                 </div>
             </div>
         </div>
-    </section>
 
-    <section class="resume">
-        <div class="container">
-            <h2 class="title title_fz16 title__section-title">Опыт</h2>
-            <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
-            <div class="divider"></div>
-
-            <div class="resume__wrapper">
-                <div class="resume__column">
-                    <h3 class="title title_fz20 resume__column-title">Образование</h3>
-                    <ul>
-                        <li>
-                            <div class="resume__item">
-                                <div class="resume__item-head">
-                                    <div class="resume__item-icon">
-                                        <img src="icons/experience/university.svg" alt="university">
+        <div class="resume">
+            <div class="container">
+                <h2 class="title title_fz16 title__section-title">Опыт</h2>
+                <div class="title title_fz36 title__section-subtitle">Чем я буду полезен</div>
+                <div class="divider"></div>
+    
+                <div class="resume__wrapper">
+                    <div class="resume__column">
+                        <h3 class="title title_fz20 resume__column-title">Образование</h3>
+                        <ul>
+                            <li>
+                                <div class="resume__item">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/experience/university.svg" alt="university">
+                                        </div>
+                                        <h4 class="title title_fz14">МГТУ им. Н. Э. Баумана</h4>
+                                        <div class="resume__item-location">Диплом магистра | Москва (2014-2020)</div>
                                     </div>
-                                    <h4 class="title title_fz14">МГТУ им. Н. Э. Баумана</h4>
-                                    <div class="resume__item-location">Диплом магистра | Москва (2014-2020)</div>
-                                </div>
-                                <div class="resume__item-body text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="resume__item">
-                                <div class="resume__item-head">
-                                    <div class="resume__item-icon">
-                                        <img src="icons/experience/courses.svg" alt="courses">
+                                    <div class="resume__item-body text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
                                     </div>
-                                    <h4 class="title title_fz14">Udemy</h4>
-                                    <div class="resume__item-location">Курсы по Web-разработке</div>
                                 </div>
-                                <div class="resume__item-body text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="resume__column">
-                    <h3 class="title title_fz20 resume__column-title">Опыт работы</h3>
-                    <ul>
-                        <li>
-                            <div class="resume__item">
-                                <div class="resume__item-head">
-                                    <div class="resume__item-icon">
-                                        <img src="icons/experience/developer.svg" alt="developer">
+                            </li>
+    
+                            <li>
+                                <div class="resume__item">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/experience/courses.svg" alt="courses">
+                                        </div>
+                                        <h4 class="title title_fz14">Udemy</h4>
+                                        <div class="resume__item-location">Курсы по Web-разработке</div>
                                     </div>
-                                    <h4 class="title title_fz14">Front-End Developer</h4>
-                                    <div class="resume__item-location">EPAM | Москва (2018-2019)</div>
-                                </div>
-                                <div class="resume__item-body text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
-                                </div>
-                            </div>
-                        </li>
-
-                        <li>
-                            <div class="resume__item">
-                                <div class="resume__item-head">
-                                    <div class="resume__item-icon">
-                                        <img src="icons/experience/designer.svg" alt="designer">
+                                    <div class="resume__item-body text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
                                     </div>
-                                    <h4 class="title title_fz14">UI/UX Designer</h4>
-                                    <div class="resume__item-location">Squad Team | Москва (2018)</div>
                                 </div>
-                                <div class="resume__item-body text">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="resume__column">
+                        <h3 class="title title_fz20 resume__column-title">Опыт работы</h3>
+                        <ul>
+                            <li>
+                                <div class="resume__item">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/experience/developer.svg" alt="developer">
+                                        </div>
+                                        <h4 class="title title_fz14">Front-End Developer</h4>
+                                        <div class="resume__item-location">EPAM | Москва (2018-2019)</div>
+                                    </div>
+                                    <div class="resume__item-body text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+    
+                            <li>
+                                <div class="resume__item">
+                                    <div class="resume__item-head">
+                                        <div class="resume__item-icon">
+                                            <img src="icons/experience/designer.svg" alt="designer">
+                                        </div>
+                                        <h4 class="title title_fz14">UI/UX Designer</h4>
+                                        <div class="resume__item-location">Squad Team | Москва (2018)</div>
+                                    </div>
+                                    <div class="resume__item-body text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. 
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -304,36 +356,36 @@
                     <div class="skills__item-img">
                         <img src="icons/skills/html5.svg" alt="html5">
                     </div>
-                    <h3 class="title title_fz14 title_skills">HTML5</h3>
-                    <p class="text text_skills">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</p>
+                    <h3 class="title title_fz14 title_black">HTML5</h3>
+                    <p class="text text_black">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</p>
                 </div>
                 <div class="skills__item">
                     <div class="skills__item-img">
                         <img src="icons/skills/css3.svg" alt="css3">
                     </div>
-                    <h3 class="title title_fz14 title_skills">CSS3</h3>
-                    <p class="text text_skills">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
+                    <h3 class="title title_fz14 title_black">CSS3</h3>
+                    <p class="text text_black">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</p>
                 </div>
                 <div class="skills__item">
                     <div class="skills__item-img">
                         <img src="icons/skills/js.svg" alt="js">
                     </div>
-                    <h3 class="title title_fz14 title_skills">Java Script</h3>
-                    <p class="text text_skills">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
+                    <h3 class="title title_fz14 title_black">Java Script</h3>
+                    <p class="text text_black">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</p>
                 </div>
                 <div class="skills__item">
                     <div class="skills__item-img">
                         <img src="icons/skills/jquery.svg" alt="jquery">
                     </div>
-                    <h3 class="title title_fz14 title_skills">Jquery</h3>
-                    <p class="text text_skills">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</p>
+                    <h3 class="title title_fz14 title_black">Jquery</h3>
+                    <p class="text text_black">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</p>
                 </div>
                 <div class="skills__item">
                     <div class="skills__item-img">
                         <img src="icons/skills/react.svg" alt="react">
                     </div>
-                    <h3 class="title title_fz14 title_skills">React</h3>
-                    <p class="text text_skills">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
+                    <h3 class="title title_fz14 title_black">React</h3>
+                    <p class="text text_black">Эта библиотека позволяет создавать web-приложения. Мы можем создать максимально интерактивный продукт именно под ваши цели</p>
                 </div>
                 <!-- <div class="skills__item">
                     <div class="skills__item-img">
@@ -405,29 +457,68 @@
             <div class="divider"></div>
 
             <div class="portfolio__wrapper">
-                <a href="#" class="portfolio__item">
-                    <img src="img/works/uber.jpg" class="portfolio__img" alt="uber">
-                    <div class="title title_fz20 portfolio__title">Some text</div>
+                <a href="https://www.tiktok.kramarenko-dev.ru/" class="portfolio__item">
+
+                    <img src="img/works/tiktok.jpg" class="portfolio__img" alt="uber">
+                    
+                    <div class="title title_fz16 portfolio__title">
+                        <div class="">Landing Page</div>
+                        <div class="portfolio__demo">
+                            <div class="portfolio__hover">Демо</div>
+                            <i class="uil uil-arrow-circle-right portfolio__hover title title_fz36"></i>
+                        </div>
+                    </div>
                 </a>
+
                 <a href="#" class="portfolio__item">
-                    <img src="img/works/pulse.jpg" class="portfolio__img" alt="pulse">
-                    <div class="title title_fz20">Some text</div>
+                    <img src="img/works/food.jpg" class="portfolio__img" alt="pulse">
+                    <div class="title title_fz16 portfolio__title">
+                        <div class="">Some text</div>
+                        <div class="portfolio__demo">
+                            <div class="portfolio__hover">Демо</div>
+                            <i class="uil uil-arrow-circle-right portfolio__hover title title_fz36"></i>
+                        </div>
+                    </div>
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/bread.jpg" class="portfolio__img" alt="test">
-                    <div class="title title_fz20">Some text</div>
+                    <div class="title title_fz16 portfolio__title">
+                        <div class="">Some text</div>
+                        <div class="portfolio__demo">
+                            <div class="portfolio__hover">Демо</div>
+                            <i class="uil uil-arrow-circle-right portfolio__hover title title_fz36"></i>
+                        </div>
+                    </div>
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/plans.jpg" class="portfolio__img" alt="test">
-                    <div class="title title_fz20">Some text</div>
+                    <div class="title title_fz16 portfolio__title">
+                        <div class="">Some text</div>
+                        <div class="portfolio__demo">
+                            <div class="portfolio__hover">Демо</div>
+                            <i class="uil uil-arrow-circle-right portfolio__hover title title_fz36"></i>
+                        </div>
+                    </div>
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/ipad.jpg" class="portfolio__img" alt="test">
-                    <div class="title title_fz20">Some text</div>
+                    <div class="title title_fz16 portfolio__title">
+                        <div class="">Some text</div>
+                        <div class="portfolio__demo">
+                            <div class="portfolio__hover">Демо</div>
+                            <i class="uil uil-arrow-circle-right portfolio__hover title title_fz36"></i>
+                        </div>
+                    </div>
                 </a>
                 <a href="#" class="portfolio__item">
                     <img src="img/works/mac.jpg" class="portfolio__img" alt="test">
-                    <div class="title title_fz20">Some text</div>
+                    <div class="title title_fz16 portfolio__title">
+                        <div class="">Some text</div>
+                        <div class="portfolio__demo">
+                            <div class="portfolio__hover">Демо</div>
+                            <i class="uil uil-arrow-circle-right portfolio__hover title title_fz36"></i>
+                        </div>
+                    </div>
                 </a>
             </div>
         </div>
@@ -477,7 +568,7 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/contacts.jpg" alt="my_photo">
+                    <img src="img/contacts2.jpg" alt="my_photo">
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 contacts__title">Контакты</h2>
@@ -507,16 +598,16 @@
 
                     <form action="#" class="contacts__form">
                         <div class="contacts__input">
-                            <input required name="name" id="name" type="text">
+                            <input required name="name" minlength="2" placeholder="Имя" id="name" type="text">
                             <label class="text" for="name">Ваше имя</label>
                         </div>
                         <div class="contacts__input">
-                            <input required name="email" id="email" type="email">
+                            <input required name="email" placeholder="Email" id="email" type="email">
                             <label class="text" for="email">Ваша почта</label>
                         </div>
 
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text"></textarea>
+                            <textarea name="text" placeholder="Текст" id="text"></textarea>
                             <label class="text" for="text">Ваше сообщение</label>
                         </div>
                         <div class="contacts__triggers">

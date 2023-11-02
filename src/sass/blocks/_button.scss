@@ -4,8 +4,9 @@
     box-shadow: 0px 4px 4px rgba(179, 176, 176, 0.15);
     padding: 12px 26px;
     border-radius: 20px;
+    transition: all 0.5s;
     &:hover {
-        box-shadow: 0px 3px 3px 0px #949090;
+        transform: scale(0.95);
         border: white;
     }
 }

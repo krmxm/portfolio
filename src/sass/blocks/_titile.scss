@@ -6,8 +6,11 @@
     margin: 0;
     padding: 0;
     z-index: 0;
-    &_skills {
+    &_black {
         color: #000;
+    }
+    &_main-color {
+        color: $main-color;
     }
     &_fz14 {
         font-size: 14px;
@@ -77,7 +80,7 @@
     font-size: 12px;
     line-height: 18px;
     color: #fff;
-    &_skills {
+    &_black {
         color: #000;
     }
     &_about {
