@@ -37,6 +37,8 @@
     &__btns {
         margin-top: 25px;
         display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
         align-items: center;
         // width: 250px;
         justify-content: space-between;
@@ -62,6 +64,12 @@
         margin-left: 20px;
     }
     &__wheel {
+        animation: scroll 2s ease infinite;
+    }
+    &__swipe-wrap{
+        display: none;
+    }
+    &__swipe {
         animation: scroll 2s ease infinite;
     }
     &__text {
