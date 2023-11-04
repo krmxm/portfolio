@@ -46,6 +46,9 @@
         line-height: 21px;
         margin-bottom: 50px;
         margin-left: 50px;
+        :nth-child(4) {
+            display: none;
+          }
     }
     &__link {
         color: #ffffff;
@@ -62,15 +65,17 @@
         justify-content: center;
         align-items: center;
         margin-left: 20px;
+        
     }
     &__wheel {
         animation: scroll 2s ease infinite;
     }
-    &__swipe-wrap{
-        display: none;
-    }
-    &__swipe {
-        animation: scroll 2s ease infinite;
+    &__swipe-wrap {
+        transform: translateY(0rem);
+        animation: swipe 6s ease infinite;
+        svg {
+            transform: rotate(-45deg);
+        }
     }
     &__text {
         font-size: 14px;
@@ -96,6 +101,12 @@
     }
 }
 
+.tap {
+    // opacity: 0;
+    animation: tuch 6s infinite;
+    // display: none;
+}
+
 @keyframes promo__animation {
     0% {
         border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -108,6 +119,25 @@
     }
 }
 
+@keyframes tuch {
+    0% {
+        opacity: 0;
+    }
+
+
+    30% {
+        opacity: 100%;
+    }
+
+    40% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 @keyframes scroll {
     0% {
         transform: translateY(0);
@@ -115,5 +145,29 @@
 
     30% {
         transform: translateY(3.75rem);
+    }
+}
+
+@keyframes swipe {
+    0% {
+        opacity: 80%;
+        transform: translateY(0rem);
+    }
+
+    25% {
+        transform: scale(0.8) translateY(0rem);
+    }
+
+    50% {
+        transform: scale(0.8) translateY(-2rem);
+    }
+
+    60% {
+        opacity: 80%;
+        transform: scale(0.9) translateY(-2rem);
+    }
+    100% {
+        opacity: 80%;
+        transform: scale(1) translateY(0rem);
     }
 }
