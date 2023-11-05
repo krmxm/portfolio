@@ -74,6 +74,7 @@
         transform: translateY(0rem);
         animation: swipe 6s ease infinite;
         svg {
+            transition: 1s;
             transform: rotate(-45deg);
         }
     }
@@ -102,9 +103,7 @@
 }
 
 .tap {
-    // opacity: 0;
     animation: tuch 6s infinite;
-    // display: none;
 }
 
 @keyframes promo__animation {
@@ -129,7 +128,7 @@
         opacity: 100%;
     }
 
-    40% {
+    32% {
         opacity: 100%;
     }
 

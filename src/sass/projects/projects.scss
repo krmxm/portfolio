@@ -1,0 +1,78 @@
+.project {
+    background: #000;
+    padding: 80px 0 40px 0;
+    overflow: hidden;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 25px;
+    }
+    &__img {
+        // margin-top: 20px;
+        width: 50%;
+        // height: 50rem;
+        border: 10px solid rgb(255, 255, 255, 0.9);
+        border-radius: 20px;
+        box-shadow: 8px -8px 100px 8px rgb(255, 255, 255, 0.8);
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+        }
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+    &__skills-title {
+        color: $main-color;
+    }
+    &__skills-wrap {
+        p {
+            margin: 0;
+        }
+    }
+    &__about-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 10px;
+    }
+    &__about-title {
+        color: $main-color;
+    }
+    &__about-descr {
+        text-align: center;
+    }
+    &__btns {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        row-gap: 20px
+    }
+    &__github-btn {
+        display: flex;
+        // justify-content:space-between;
+        align-items: center;
+        text-decoration: none;
+    }
+    &__github-icon {
+        margin-right: 5px;
+        padding-bottom: 3px;
+    }
+    &__link-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+}

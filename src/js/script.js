@@ -5,7 +5,6 @@
 const sections = document.querySelectorAll("section");
 const navbarLinks = document.querySelectorAll(".nav__link");
 const navHeight = document.querySelector("header").offsetHeight;
-console.log(navHeight);
 
 window.addEventListener('scroll', () => {
     
@@ -30,6 +29,26 @@ window.addEventListener('scroll', () => {
     });
 });
 
+navbarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        link.classList.add('active-link');
+    });
+});
+
+// hidding swipe-icon
+
+const secondSection = document.querySelector(".promo");
+const swipeIcon = document.querySelector('.promo__swipe-wrap');
+
+window.addEventListener('scroll', () => {
+    const secondSectionTop = secondSection.offsetTop;
+    
+    if(scrollY >= secondSectionTop + navHeight) {
+    for (const child of swipeIcon.children) {
+        child.style.opacity = '0';
+    }
+}
+});
 
 // accordion
 

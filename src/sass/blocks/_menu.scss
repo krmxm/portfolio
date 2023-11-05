@@ -56,7 +56,15 @@
 
 /* Active link */
 
-.active-link,
-.nav__link:hover {
-    color: $main-color;
+.active-link {
+    color: $main-color !important;
+}
+
+@media (hover: hover){
+    
+    .nav__link:hover{
+        color: $main-color;
+ 
+    }
+    
 }
