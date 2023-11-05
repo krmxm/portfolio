@@ -7,7 +7,18 @@
     transition: all 0.5s;
     &:hover {
         transform: scale(0.95);
-        border: white;
+    }
+    &__back {
+        height: 45px;
+        box-shadow: 0px 4px 4px rgba(179, 176, 176, 0.15);
+        background: none;
+        border: 2px solid $main-color;
+        padding: 12px 26px;
+        border-radius: 20px;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(0.95);
+        }
     }
 }
 

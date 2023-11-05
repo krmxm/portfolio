@@ -371,8 +371,18 @@
     }
     }
     .project {
+        padding: 40px 0;
+        &__wrapper {
+            row-gap: 15px;
+        }
         &__img {
             width: 100%;
+            border: 5px solid rgb(255, 255, 255, 0.9);
+            border-radius: 20px;
+            box-shadow: 6px -6px 100px 6px rgb(255, 255, 255, 0.8);
+            img {
+                border-radius: 20px;
+            }
         }
         &__descr {
             width: 100%;
@@ -389,6 +399,7 @@
     .title {
         &_fz36 {
             font-size: 23px;
+            line-height: 25px;
         }
     }
     .hamburger {

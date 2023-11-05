@@ -64,14 +64,19 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         column-gap: 35px;
+        justify-content: center;
+        align-items: center;
     }
     &__policy {
         font-weight: 500;
         font-size: 12px;
         display: flex;
+        justify-content: center;
         align-items: center;
+        text-align: center;
         input {
-            margin-right: 10px;
+            // margin-right: 10px;
+            
         }
         span {
             color: #fff;

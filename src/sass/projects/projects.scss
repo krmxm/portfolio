@@ -1,6 +1,6 @@
 .project {
     background: #000;
-    padding: 80px 0 40px 0;
+    padding: 60px 0 40px 0;
     overflow: hidden;
     &__wrapper {
         display: flex;
@@ -10,9 +10,7 @@
         row-gap: 25px;
     }
     &__img {
-        // margin-top: 20px;
         width: 50%;
-        // height: 50rem;
         border: 10px solid rgb(255, 255, 255, 0.9);
         border-radius: 20px;
         box-shadow: 8px -8px 100px 8px rgb(255, 255, 255, 0.8);
@@ -74,5 +72,17 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
+    }
+    &__back-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        flex: 0 0 50%;
+        &:hover {
+            svg path {
+                fill: red($color: #000000);
+            }
+        }
     }
 }
