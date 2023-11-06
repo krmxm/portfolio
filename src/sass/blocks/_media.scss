@@ -397,6 +397,9 @@
         padding: 0 10px;
     }
     .title {
+        &__section-subtitle {
+            margin-top: 15px;
+        }
         &_fz36 {
             font-size: 23px;
             line-height: 25px;
@@ -465,7 +468,7 @@
     }
     .resume {
         &__wrapper {
-            padding: 0;
+            padding: 30px 0 0 0;
         }
     }
     .skills {
@@ -484,6 +487,14 @@
     }
     .contacts {
         padding-bottom: 50px;
+        &__subtitle {
+            margin-top: 15px;
+        }
+        &__descr {
+            .divider {
+                margin-top: 15px;
+            }
+        }
         &__form {
             grid-template: 45px 45px 190px minmax(45px, auto) / 1fr;
         }

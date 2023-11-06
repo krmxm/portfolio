@@ -34,9 +34,17 @@
     &__link {
         text-decoration: none;
         padding-right: 25px;
+        &:hover {
+            svg path {
+                fill: $main-color;
+            }
+        }
         img {
             max-width: 30px;
             max-width: 30px;
+            &:hover {
+                color: $main-color;
+            }
         }
     }
     &__form {

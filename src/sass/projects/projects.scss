@@ -78,7 +78,6 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        flex: 0 0 50%;
         &:hover {
             svg path {
                 fill: red($color: #000000);
