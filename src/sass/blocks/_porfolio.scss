@@ -6,8 +6,8 @@
         margin-top: 60px;
         display: grid;
         // grid-template: repeat(2, 270px) / repeat(4, 270px);
-        grid-template-columns: repeat(4, 270px);
-        grid-template-rows: repeat(2, 320px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 360px);
         grid-auto-rows: minmax(320px, auto);
         gap: 13px;
         // .vertical {
@@ -40,8 +40,14 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        margin: 0 0 0 0;
+        margin: 5px 0 5px 10px;
         color: black;
+    }
+    &__descr {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
     }
     &__demo {
         display: flex;

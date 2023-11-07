@@ -78,9 +78,9 @@
     }
     &__policy {
         // font-weight: 500;
-        font-size: 13px;
+        font-size: 14px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         text-align: center;
         input {
@@ -128,6 +128,6 @@
     &__checkbox {
         width: 25px;
         height: 25px;
-        margin-right: 5px;
+        margin-right: 10px;
     }
 }
