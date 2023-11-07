@@ -508,6 +508,8 @@
             column-gap: unset;
             row-gap: 20px;
             margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
         }
         &__btn {
             order: 2;
@@ -515,8 +517,17 @@
             margin: 0 auto;
         }
         &__policy {
-            margin: 0 auto;
+            // width: 0%;
+            // margin: 0 auto;
             line-height: 18px;
+            justify-content: center;
+            align-items: center;
+            text-align: start;
+            font-size: 12px;
+        }
+        &__checkbox {
+            width: 20px;
+            height: 20px;
         }
     }
     .btn2 {

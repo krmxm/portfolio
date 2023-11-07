@@ -96,69 +96,74 @@ window.onload = function () {
 
 // forms
 
-const forms = document.querySelectorAll('form'),
-      inputs = document.querySelectorAll('input'),
-      textareas = document.querySelectorAll('texarea');
+const form = document.querySelectorAll('form'),
+          inputs = document.querySelectorAll('input'),
+          textarea = document.querySelectorAll('textarea');
 
-const message = {
-    loading: 'Загрузка...',
-    success: 'Благодарю! Скоро я с вами свяжусь!',
-    failure: 'Ошибка'
-};
 
-const path = {
-    designer: 'assets/server.php',
-    question: 'assets/question.php'
-};
 
-const clearInputs = () => {
-    inputs.forEach(item => {
-        item.value = '';
+    // checkNumInputs('input[name="user_phone"]');
+
+    const message = {
+        loading: 'Загрузка...',
+        success: 'Скоро мы с вами свяжемся!',
+        failure: 'Ошибка'
+    };
+
+    const postData = async (url, data) => {
+        document.querySelector('.status').textContent = message.loading;
+        const res = await fetch(url, {
+            method: 'POST',
+            body: data
+        });
+
+        return await res.text();
+    };
+ 
+    const clearInputs = () => {
+        inputs.forEach(item => {
+            item.value = '';
+        });
+    };
+
+
+    form.forEach(item => {
+        item.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const statusMessage = document.createElement('div');
+            statusMessage.classList.add('status', 'title', 'title_fz14');
+            item.appendChild(statusMessage);
+
+            const formData = new FormData(item);
+            if(item.getAttribute('data-calc') === 'end'){
+                for(let key in state) {
+                    formData.append(key, state[key]);
+                }
+            }
+
+            postData('../mailer/smart.php', formData)
+                .then(res => {
+                    console.log(res);
+                    statusMessage.textContent = message.success;
+                })
+                .catch(() => statusMessage.textContent = message.failure)
+                .finally(() => {
+                    clearInputs();
+                    // clearState();
+                    // Object.keys(state).forEach(key => delete state[key]); //!!!
+                    setTimeout(() => {
+                        statusMessage.remove();
+                        document.querySelectorAll('[data-modal]').forEach(item => {
+                            statusMessage.remove();
+                            // item.classList.remove('active');
+                            // document.body.style.overflow = '';
+                            // document.body.style.marginRight = `0px`;
+                        });
+                    }, 5000);
+                });
+        });
     });
-    textareas.forEach(item => {
-        item.value = '';
-    });
-};
-
-forms.forEach(item => {
-    item.addEventListener('submit', (e) => {
-        e.preventDefault();
-        
-        const statusMessage = document.createElement('div');
-        statusMessage.classList.add('add');
-        item.parentElement.appendChild(statusMessage);
-
-        let textMessage = document.createElement('div');
-        textMessage.textContent = message.loading;
-        statusMessage.appendChild(textMessage);
-
-        const postData = async (url, data) => {  // нет url 
-            const res = await fetch(url, {
-                method: 'POST',
-                body: data
-            });
-        
-            return await res.text();
-        };
-
-        const formData =  new FormData(item);
-
-        postData('server.php', formData)
-            .then(res => {
-                console.log(res);
-                textMessage.textContent = message.success;
-            })
-            .catch(() => {
-                textMessage.textContent = message.failure;
-            })
-            .finally(() => {
-                clearInputs();
-                setTimeout(() => {
-                    statusMessage.remove();
-                }, 5000);
-            });
-    });
-});
 
 // window.addEventListener("load", function() {
     
