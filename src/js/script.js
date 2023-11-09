@@ -124,6 +124,9 @@ const form = document.querySelectorAll('form'),
         inputs.forEach(item => {
             item.value = '';
         });
+        textarea.forEach(item => {
+            item.value = '';
+        });
     };
 
 

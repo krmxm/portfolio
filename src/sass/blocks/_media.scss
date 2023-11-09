@@ -73,13 +73,25 @@
     .portfolio {
         &__wrapper {
             grid-template-columns: repeat(auto-fit, 280px);
-            grid-auto-rows: 320px;
+            grid-template-rows: repeat(2, auto);
+            grid-auto-rows: minmax(auto, auto);
             justify-content: space-around;
             row-gap: 40px;
             .horizonal, .vertical {
             grid-row: unset;
             grid-column: unset;
             }
+        }
+        &__title {
+            flex-direction: column;
+            padding: 0 2px;
+            margin: 5px 0;
+        }
+        &__descr {
+            align-items: center;
+        }
+        &__descr-skills {
+            text-align: center;
         }
     }
     .contacts {
@@ -378,10 +390,10 @@
         &__img {
             width: 100%;
             border: 5px solid rgb(255, 255, 255, 0.9);
-            border-radius: 20px;
+            border-radius: 25px;
             box-shadow: 6px -6px 100px 6px rgb(255, 255, 255, 0.8);
             img {
-                border-radius: 20px;
+                border-radius: 19px;
             }
         }
         &__descr {
