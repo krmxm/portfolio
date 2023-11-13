@@ -6,8 +6,9 @@
     &__wrapper {
         padding: 60px 65px 0 65px;
         display: grid;
-        grid-template-columns: repeat(2, 425px);
+        grid-template-columns: 425px;
         column-gap: 135px;
+        justify-content: center;
     }
     &__column {
         &-title {
